@@ -1,0 +1,214 @@
+// // .dashboardChart-main-container {
+// //   display: flex;
+// //   flex-wrap: wrap;
+// //   margin: 10px 0 10px 0;;
+// //   padding: 20px 0 10px 0;
+// //   // flex-wrap: wrap;
+// //   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+// //   border-radius: var(--bs-card-border-radius);
+// //   .chart-full-width {
+// //     flex-basis: 100%;
+// //   }
+// // }
+
+// // .dashboardChart-container {
+// //   flex: 1;
+// //   display: flex;
+// //   flex-direction: column;
+// //   border: var(--bs-card-border-width) solid #4a5073;
+// //   border-radius: var(--bs-card-border-radius);
+// //   padding: 10px;
+// //   margin: 10px;
+// // }
+
+// // .dashboardChart-container p,
+// // .legend-container {
+// //   color: #4a5073;
+// //   font-size: 0.8rem;
+// //   text-transform: uppercase;
+// //   font-weight: 700;
+// //   text-align: center;
+// // }
+
+// .legend1-main-container{
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   flex-direction: row;
+// }
+
+// .legend-container {
+//   display: flex;
+//   align-items: center;
+//   margin: 5px;
+// }
+// // .custom-bar-chart{
+// //   width:"100%" !important
+// // }
+
+// .custom-chart-label{
+//   font-family: var(--bs-body-font-family);
+//     font-size: var(--bs-body-font-size);
+//     line-height: var(--bs-body-line-height);
+//     color: var(--bs-body-color);
+// }
+// .first-customer{
+//   margin: 20px 0px;
+//   padding: 10px;
+//   border: 1px solid #cac6c6;
+//   border-radius: 5px;
+// }
+
+/* Container for the chart and labels */
+.customer-chart-container {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #cac6c6;
+  border-radius: 5px;
+  margin: 5px 0px; /* Align items to the left */
+  
+}
+
+.customer-chart {
+  flex: 2;
+  padding: 10px;
+  border-right: 1px solid #cac6c6;
+  // canvas{
+  //   margin:  auto;
+  // }
+}
+
+.customer-labels {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  row-gap: 10px;
+  padding: 10px;
+}
+
+.dashboard-boxes-container {
+  border-radius: 5px;
+  padding: 10px;
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 5px;
+  justify-content: center;
+}
+.dashboard-box {
+  border: 1px solid #cac6c6;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  // background: linear-gradient(rgb(0, 176, 155), rgb(150, 201, 61));
+
+  flex: 1 0 30%; /* Adjust the width as needed */
+  margin: 1%; /* Adjust the margin as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  
+  label {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .live-report-data {
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  .new-icon {
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .new-icon-image {
+    text-align: center;
+  }
+}
+.sc-stack {
+  background: linear-gradient(
+    135deg,
+    rgb(171, 220, 255) 0%,
+    rgb(3, 150, 255) 100%
+  );
+}
+.sc-win{
+  background: linear-gradient(-20deg, #46acf9 0%, #4e4376 100%)
+}
+
+.scr-sc{
+  background: linear-gradient(rgb(0, 176, 155), rgb(150, 201, 61));
+}
+
+.usc-balance{
+  background: linear-gradient(135deg, #4f0c2e 0%, #cccdcb 100%);
+}
+.rsc-balance{
+  background: linear-gradient(135deg, #d2ba27 0%, #2351ea 100%);
+}
+.customer-login-chart-data {
+}
+// /* Style for the Bar chart */
+// .customer-chart {
+//   flex: 2;
+//   margin-right: 20px;
+// }
+
+// .customer-labels {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+// .customer-chart {
+//   flex:1; /* Full width on small screens */
+//   margin-right: 0; /* No margin on small screens */
+// }
+
+// .customer-chart-container {
+//   flex-direction: row; /* Stack chart and labels on top of each other */
+//   align-items: center;
+//   margin: 20px 0px;
+//   border: 1px solid #cac6c6;
+//   border-radius: 5px;
+// }
+
+// .customer-labels {
+//   margin-top: 40px;
+//   display: flex;
+//   align-items: start;
+//   justify-content: center;
+//   margin-left: 20px;
+//  /* Add some margin between chart and labels on small screens */
+// }
+// /* Responsive styles for mobile devices */
+// @media (max-width: 768px) {
+
+// }
+// @media only screen and (max-width: 767px) {
+//   .customer-chart-container {
+//     flex-direction: column; /* Stack chart and labels on top of each other */
+//     align-items: center; /* Center items on small screens */
+//   }
+
+// .customer-labels {
+//   flex-direction: row;
+//   column-gap: 10px;
+// }
+// }

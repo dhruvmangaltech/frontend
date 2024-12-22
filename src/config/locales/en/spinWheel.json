@@ -1,0 +1,40 @@
+{   "title": "Spin Wheel Configuration",
+    "headers" : {
+        "isAllow" : "Is Allow",
+        "sectionId" : "Section ID",
+		"gcCoin" : "GC Coin",
+		"scCoin" : "SC Coin",
+		"priority": "Priority",
+        "userLimit": "User Limit",
+        "actions"  : "Action"    
+    },
+    "editSpin" :{
+        "heading" : "Edit Spin Wheel Configuration",
+        "inputField": {
+            "section": {
+              "label": "Section"
+            },
+            "gcCoin": {
+              "label": "GC Coin"
+            },
+            "scCoin": {
+                "label": "SC Coin"
+              },
+            "priority": {
+              "label": "Priority"
+            },
+            "userLimit": {
+                "label": "User Limit"
+              },
+            "isAllowed": {
+                "label": "Is Allowed"
+              },
+            "setUserLimit": {
+                "label": "Set User limit"
+             }
+          },
+          "submit" : "Submit"
+    },
+	"noDataFound" : "No Data Found"
+
+}

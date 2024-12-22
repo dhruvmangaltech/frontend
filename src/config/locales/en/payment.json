@@ -1,0 +1,15 @@
+{
+    "paymentProvider": {
+        "title": "Payment Providers",
+        "headers": {
+          "id": "Id",
+          "name": "Name",
+          "status": "Status",
+          "actions": "Actions"
+        },
+        "activeStatus": "Active",
+        "inActiveStatus": "In-Active",
+        "noDataFound": "No data found"
+        
+      }
+}

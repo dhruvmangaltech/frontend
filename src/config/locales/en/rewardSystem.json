@@ -1,0 +1,85 @@
+{   "title": "Reward System",
+    "headers" : {
+        "id" : "ID",
+        "vipTier" : "VIP Tier",
+		"boost" : "Boost",
+		"rakeback" : "Rakeback",
+		"scRequiredPlay": "Required SC Play / in months",
+        "gcRequiredPurchase": "Required GC Purchase / in months",
+        "bonusSc": "Bonus SC",
+        "bonusGc": "Bonus GC",
+		"level": "Level",
+        "gradualLoss"  : "Gradual Loss",
+		"status"  : "Status",
+		"liveSupport" : "Live Support",
+        "actions"  : "Action"    
+    },
+    "createRewardSystem": {
+		"title": "Create Reward System",
+		"inputFields": {
+			"vipTier": {
+				"label": "VIP Tier Name",
+				"placeholder": "Enter VIP Tier Name"
+			},
+			"scRequiredPlay": {
+				"label": "SC Required Play",
+				"placeholder": "Enter SC Required Play"
+			},
+			"gcRequiredPurchase": {
+				"label": "GC Required Purchase",
+				"placeholder": "Enter GC Required Purchase"
+			},
+			"scRequiredMonth": {
+				"label": "SC Required Month",
+				"placeholder": "Enter SC Required Month"
+			},
+			"gcRequiredMonth": {
+				"label": "GC Required Month",
+				"placeholder": "Enter GC Required Month"
+			},
+            "bonusSc": {
+				"label": "Bonus SC",
+				"placeholder": "Enter Bonus SC"
+			},
+			"bonusGc": {
+				"label": "Bonus GC",
+				"placeholder": "Enter Bonus GC"
+			},
+			"boost": {
+				"label": "Boost (%)",
+				"placeholder": "Enter Boost Percentage"
+			},
+			"rakeback": {
+				"label": "Rakeback (%)",
+				"placeholder": "Enter Rakeback Percentage"
+			},
+			"level": {
+				"label": "Level",
+				"placeholder": "Enter Level"
+			},
+			"gradualLoss": {
+				"label": "Gradual Loss (In months)",
+				"placeholder": "Enter Gradual Loss"
+			},
+			"icon": {
+				"label": "Icon",
+				"message": "Only PNG, JPG, JPEG allowed with size < 1MB",
+				"errors": {
+				  "required": "A file is required",
+				  "invalidFormat": "Uploaded file has unsupported format.",
+				  "max": "File Size Should be Less Than 1MB"
+				}
+			},
+            "active": "Active",
+			"liveSupport": "Live Support"
+		},
+		"cancelButton": "Cancel",
+		"submitButton": "Submit",
+		"activeStatus" : "Active",
+		"inActiveStatus" : "In-Active",
+		"no": "No",
+		"yes": "Yes"
+	},
+	"noDataFound" : "No Data Found"
+
+}

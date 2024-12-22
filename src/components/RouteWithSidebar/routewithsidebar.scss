@@ -1,0 +1,14 @@
+.menu-btn{
+    padding: 0;
+    width: 32px;
+    background: transparent;
+    border: none;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.site-logo{
+    max-width: 75px;
+}

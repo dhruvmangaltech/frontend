@@ -1,0 +1,69 @@
+{
+	"title": "Packages",
+	"filters": {
+		"hot": "Hot",
+		"status": "Status",
+		"isVisibleInStore": "Is Visible in Store",
+		"search": "Search"
+	},
+	"headers": {
+		"id": "Id",
+		"orderId": "Order Id",
+		"amount": "Amount",
+		"gcCoin": "GC Coin",
+		"scCoin": "SC Coin",
+		"status": "Status",
+		"hot": "Hot",
+		"type": "Type",
+		"visibleInStore": "Visible In Store",
+		"packageUsedCount": "Claimed count",
+		"action": "Action"
+	},
+	"createButton": "Create",
+	"reorderButton": "Reorder",
+	"save": "Save",
+	"reorderPackage": {
+		"label": "Packages Reorder"
+	},
+  "activeStatus": "Active",
+  "inActiveStatus": "In-Active",
+  "noDataFound": "No data found",
+  "reorderedToast": "Packages Successfully Reordered",
+	"createPackage": {
+		"title": "Create Package",
+		"inputFields": {
+			"amountField": {
+				"label": "Amount",
+				"placeholder": "Enter Amount"
+			},
+			"gcField": {
+				"label": "GC Coin",
+				"placeholder": "Enter Coins"
+			},
+			"scField": {
+				"label": "SC Coin",
+				"placeholder": "Enter Coins"
+			},
+			"type": {
+				"label": "Package Type", 
+				"options": {
+					"regular": "Regular",
+					"best": "Best",
+					"popular": "Popular"
+				}
+			},
+			"thumbnail": {
+				"label": "Thumbnail",
+				"message": "Only PNG, JPG, JPEG allowed with size < 1MB"
+			},
+            "validTill": "Valid Till",
+            "selectDate": "Select Date",
+			"active": "Active",
+			"hot": "Hot",
+			"visibleInStore": "Visible In Store",
+			"firstPurchaseApplicable": "First Purchase Applicable"
+		},
+		"cancelButton": "Cancel",
+		"submitButton": "Submit"
+	}
+}

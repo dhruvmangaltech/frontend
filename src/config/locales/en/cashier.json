@@ -1,0 +1,66 @@
+{
+  "title": "Cashier Management",
+  "redeemConfiguration": {
+    "title": "Redeem Configuration",
+    "editButton": "Edit",
+    "submitButton": "Submit",
+    "inputFields": {
+      "minRedeemableCoins": {
+        "label": "Minimum Redeemable Coins",
+        "errors": {
+          "required": "Minimum coins is required",
+          "min": "Coin must be at-least 1"
+        }
+      },
+      "maxRedeemableCoins": {
+        "label": "Maximum Redeemable Coins",
+        "errors": {
+          "required": "Mmaximum coins is required",
+          "min": "Coin must be at-least 1"
+        }
+      },
+      "maxNonPurchaserAmount": {
+        "label": "Maximum Non-Purchaser Amount Limit",
+        "errors": {
+          "required": "Maximum non-purchaser amount is required",
+          "min": "Amount must be at-least 1"
+        }
+      },
+      "maxNonPurchaserDays": {
+        "label": "Maximum Non-Purchaser Days Limit",
+        "errors": {
+          "required": "Maximum non-purchaser Days is required",
+          "min": "Days must be at-least 1"
+        }
+      },
+      "weeklyRedeemableLimit": {
+        "label": "Weekly Redeemable Coins Limit",
+        "errors": {
+          "required": "Weekly redeemable coins limit is required",
+          "min": "Weekly redeemable coins limit must be at-least 1"
+        }
+      },
+      "maxPendingRedemptionLimit": {
+        "label": "No of maximum redemption at a time",
+        "errors": {
+          "required": "No of maximum redemption limit is required",
+          "min": "No of maximum redemption limit must be at-least 1"
+        }
+      }
+    }
+  },
+  "depositConfiguration": {
+    "title": "Deposit Configuration",
+    "editButton": "Edit",
+    "submitButton": "Submit",
+    "inputFields": {
+      "dailyDepositLimit": {
+        "label": "Daily Deposit Amount Limit",
+        "errors": {
+          "required": "Daily deposit amount limit is required",
+          "min": "Daily deposit amount limit must be at-least 1"
+        }
+      }
+    }
+  }
+}

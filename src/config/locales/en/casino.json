@@ -1,0 +1,457 @@
+{
+  "restrictedCountries": {
+    "updateSuccessToast": "Restricted countries list updated successfully.",
+    "alreadyAddedToast": "Already added this Country",
+    "restrictedCountriesLabel": "Restricted Countries",
+    "addToRestrictedCountries": "Add to Restricted Countries",
+    "removeFromRestrictedCountries": "Remove from Restricted Countries",
+    "noDataFound": "No data found",
+    "actions": "Actions",
+    "addCountriesAppearHere": "Countries you add will appear here",
+    "submitButton": "Submit",
+    "unRestrictedCountriesLabel": "Unrestricted Countries",
+    "removeCountriesAppearHere": "Countries you remove will appear here"
+  },
+  "casinoProvider": {
+    "title": "Casino Providers",
+    "headers": {
+      "id": "Id",
+      "name": "Name",
+      "thumbnail": "Thumbnail",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "createButton": "Create",
+    "viewHere": "View Here",
+    "noImageAvailable": "No Image Available",
+    "activeStatus": "Active",
+    "inActiveStatus": "In-Active",
+    "noDataFound": "No data found",
+    "createProviderSuccessToast": "Provider Successfully Created.",
+    "editProviderSuccessToast": "Provider Successfully Updated.",
+    "deleteProviderSuccessToast": "Provider Successfully Deleted.",
+    "createProvider": {
+      "title": "Create Provider",
+      "provider": "Provider",
+      "cancel": "Cancel",
+      "submit": "Submit"
+    },
+    "inputField": {
+      "providerName": {
+        "label": "Provider Name",
+        "placeholder": "Enter Provider Name",
+        "errors": {
+          "required": "Provider Name Required",
+          "invalid": "Only Alpha-Numeric Values Allowed",
+          "max": "Name must be less than 50 characters"
+        }
+      },
+      "status": {
+        "label": "Active"
+      },
+      "thumbnail": {
+        "label": "Thumbnail",
+        "message": "Only PNG, JPG, JPEG allowed with size < 1MB",
+        "errors": {
+          "required": "A file is required",
+          "invalidFormat": "Uploaded file has unsupported format.",
+          "max": "File Size Should be Less Than 1MB"
+        }
+      }
+    }
+  },
+  "casinoCategory": {
+    "title": "Casino Categories",
+    "createButton": "Create",
+    "reorder": "Reorder",
+    "headers": {
+      "categoryId": "Category Id",
+      "name": "Name",
+      "orderId": "Order Id",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "reorderCategory": {
+      "label": "Casino Categories Reorder",
+      "save": "Save",
+      "id": "ID",
+      "name": "Name",
+      "status": "Status"
+    },
+    "categoryUpdateToast": "Category Successfully Updated.",
+    "categoryCreateToast": "Category Successfully Created.",
+    "categoriesReorderSuccessToast": "Categories Successfully Reordered.",
+    "activeStatus": "Active",
+    "inActiveStatus": "In-Active",
+    "noDataFound": "No data found",
+    "createCategory": {
+      "label": "Casino Category",
+      "cancel": "Cancel",
+      "submit": "Submit"
+    },
+    "inputField": {
+      "categoryName": {
+        "label": "Category Name",
+        "placeholder": "Enter Category Name",
+        "errors": {
+          "required": "Category Name Required"
+        }
+      },
+      "isActive": {
+        "label": "Active"
+      }
+    }
+  },
+  "casinoSubCategory": {
+    "title": "Casino Sub Categories",
+    "createButton": "Create",
+    "reorder": "Reorder",
+    "headers": {
+      "id": "ID",
+      "name": "Name",
+      "orderId": "Order Id",
+      "status": "Status",
+      "thumbnail": "Thumbnail",
+      "categoryName": "Category Name",
+      "featured": "Featured",
+      "actions": "Actions"
+    },
+    "viewHere": "View Here",
+    "noImageAvailable": "No Image Available",
+    "activeStatus": "Active",
+    "inActiveStatus": "In-Active",
+    "noDataFound": "No data found",
+    "categoryFirst": "Select Category First",
+    "categoryCreateSuccess": "Sub Category Successfully Created.",
+    "categoryUpdateSuccess": "Sub Category Successfully Updated.",
+    "categoryReorderSuccess": "Sub Category Successfully Reordered.",
+    "filters": {
+      "category": "Category",
+      "all": "All",
+      "active": "Active",
+      "inactive": "In-Active",
+      "status": "Status",
+      "search": "Search",
+      "searchPlace": "Search By Sub Category Name"
+    },
+    "reorderCategory": {
+      "title": "Casino Sub Categories Reorder",
+      "category": "Category",
+      "selectCategory": "Select Category",
+      "save": "Save",
+      "id": "ID",
+      "name": "Name",
+      "status": "Status",
+      "categoryName": "Category Name"
+    },
+    "createSubCategory": {
+      "title": "Casino Sub Category",
+      "cancel": "Cancel",
+      "submit": "Submit"
+    },
+    "inputField": {
+      "categoryName": {
+        "label": "Sub Category Name",
+        "placeholder": "Enter Sub-category Name",
+        "errors": {
+          "required": "Sub Category Name Required"
+        }
+      },
+      "category": {
+        "label": "Main Category",
+        "option": "Select Category",
+        "errors": {
+          "required": "Category is required"
+        }
+      },
+      "active": {
+        "label": "Active"
+      },
+      "featured": {
+        "label": "Is Featured"
+      },
+      "thumbnail": {
+        "label": "Category Thumbnail",
+        "message": "Only svg allowed with size < 1MB",
+        "errors": {
+          "required": "A file is required",
+          "invalidFormat": "Uploaded file has unsupported format.",
+          "max": "File Size Should be Less Than 1MB"
+        }
+      }
+    }
+  },
+  "casinoGames": {
+    "addGames": {
+      "title": "Add / Remove / View Games :",
+      "gameScrumbTitle": "Casino Management >>",
+      "AddGameScrumb": " Sub Categories",
+      "gameScrumb": "Add Games",
+      "createButton": "Save",
+      "gameSuccessToast": "Games added Successfully.",
+      "addGameToast": "Already added this game",
+      "gameAddTitle": "Games you add will appear here",
+      "gameRemoveTitle": "Games you remove will appear here",
+      "gameAddedTitle": "Added Games",
+      "gameRemainTitle": "Not Added Games",
+      "headers": {
+        "id": "ID",
+        "name": "Name",
+        "gameName": "Game Name",
+        "casinoProvider": "Casino Provider",
+        "status" : "Status",
+        "rtp" : "Return To Player",
+        "actions": "Actions"
+      },
+      "addGameMessage": "Add Games to view",
+      "search": "Search",
+      "searchPlaceholder": "Search By Game Name",
+      "noData": "No data found"
+    },
+    "reorder": {
+      "title": "Game Reorder",
+      "updateButton": "Update",
+      "category": "Category",
+      "selectCategory": "Select Category",
+      "subCategory": "Sub Category",
+      "all": "All",
+      "headers": {
+        "id": "ID",
+        "orderID": "Order ID",
+        "gameName": "Game Name",
+        "action": "Action"
+      },
+      "noData": "No Data Found.",
+      "selectFirstMessage": "Select Category & Sub Category First",
+      "gameNotSelected": "Game Not Selected",
+      "reorderGameSuccess": "Casino category games reordered successsfully"
+    }
+  },
+  "casinoBannerManagement": {
+    "title": "Banner Management",
+    "uploadButton": "Upload",
+    "bannerPreview": "Banner Preview",
+    "noDataFound": "No data found",
+    "updateMessage": "Update Banner",
+    "delete": "Delete",
+    "bannerCreateSuccess": "Banner Successfully Created.",
+    "bannerUpdateSuccess": "Banner Successfully Updated.",
+    "bannerDeleteSuccess": "Banner Successfully Deleted.",
+    "headers": {
+      "id": "ID",
+      "name" : "Banner Name",
+      "visibility": "Visibility",
+      "bannerMobile": "Mobile Banner",
+      "bannerDesktop": "Banner Desktop",
+      "pageName": "Page Name",
+      "action": "Action"
+    },
+    "uploadBanner": {
+      "title": "Banner",
+      "cancel": "Cancel",
+      "submit": "Submit"
+    },
+    "constant": {
+      "homeBackground": "Home Background",
+      "homeBanner": "Home Banner",
+      "casinoBackground": "Casino Background",
+      "casinoBanner": "Casino Banner",
+      "promotionBackground": "Promotion Background",
+      "promotionBanner": "Promotion Banner",
+      "loyaltyBackground": "Loyalty Background",
+      "loyaltyBanner": "Loyalty Banner",
+      "beforeLogin": "Before Login",
+      "afterLogin": "After Login",
+      "both": "Both",
+      "lobbyPage": "Lobby Page",
+      "lobbySlider" : "Lobby Slider",
+      "promotionPage": "Promotion Page",
+      "rewardPage": "Reward Page",
+      "sweeperScratchersPage" : "sweeper Scratcher Page",
+      "storePage" : "Store Page",
+      "selectBannerVisibility": "Select Banner Visibility",
+      "selectPageName": "Select Page Name",
+      "registration": "Registration",
+      "search": "Search",
+      "purchase": "Purchase",
+      "kyc": "KYC",
+      "none": "None",
+      "store" : "Store",
+      "reward" :"Reward",
+      "promotionsPage" : "Promotions Page",
+      "sweeperScratchers" : "sweeper Scratchers"
+    },
+    "inputField": {
+      "visibility": {
+        "label": "Banner Visibility",
+        "option": "Select",
+        "errors": {
+          "required": "Banner Visibility is Required"
+        }
+      },
+      "pageName": {
+        "label": "Page Name",
+        "option": "Select",
+        "errors": {
+          "required": "Page Name is Required"
+        }
+      },
+      "btnRedirection": {
+        "label": "Button Redirection",
+        "placeholder": "Enter Button Redirection"
+      },
+      "mobileImage": {
+        "label": "Mobile Banner",
+        "errors": {
+          "required": "Mobile Banner Image required",
+          "invalidFormat": "Uploaded file has unsupported format.",
+          "max": "File Size Should be Less Than 1MB"
+        }
+      },
+      "desktopImage": {
+        "label": "Desktop Banner",
+        "errors": {
+          "required": "Desktop Banner Image required",
+          "invalidFormat": "Uploaded file has unsupported format.",
+          "max": "File Size Should be Less Than 1MB"
+        }
+      },
+     
+      "textOne": {
+        "label": "Text Heading1",
+        "placeholder": "Enter Text Heading"
+      },
+      "textTwo": {
+        "label": "Text Heading2",
+        "placeholder": "Enter Text Heading"
+      },
+      "textThree": {
+        "label": "Text Description",
+        "placeholder": "Enter Text Description"
+      },
+      "btnText": {
+        "label": "Button Text",
+        "placeholder": "Enter Button Text"
+      },
+      "name": {
+        "label": "Banner Name",
+        "placeholder": "Enter Banner Name"
+      }
+    }
+  },
+  "popupManagement": {
+    "title": "Popup Management",
+    "uploadButton": "Upload",
+    "popupPreview": "Popup Preview",
+    "noDataFound": "No data found",
+    "updateMessage": "Update Popup",
+    "delete": "Delete",
+    "popupCreateSuccess": "Popup Successfully Created.",
+    "popupUpdateSuccess": "Popup Successfully Updated.",
+    "popupDeleteSuccess": "Popup Successfully Deleted.",
+    "headers": {
+      "id": "ID",
+      "name" : "Popup Name",
+      "visibility": "Visibility",
+      "popupMobile": "Mobile Popup",
+      "popupDesktop": "Popup Desktop",
+      "popupName": "Popup Name",
+      "action": "Action"
+    },
+    "uploadPopup": {
+      "title": "Popup",
+      "cancel": "Cancel",
+      "submit": "Submit"
+    },
+    "constant": {
+      "homeBackground": "Home Background",
+      "homePopup": "Home Popup",
+      "casinoBackground": "Casino Background",
+      "casinoPopup": "Casino Popup",
+      "promotionBackground": "Promotion Background",
+      "promotionPopup": "Promotion Popup",
+      "loyaltyBackground": "Loyalty Background",
+      "loyaltyPopup": "Loyalty Popup",
+      "beforeLogin": "Before Login",
+      "afterLogin": "After Login",
+      "both": "Both",
+      "lobbyPage": "Lobby Page",
+      "promotionPage": "Promotion Page",
+      "rewardPage": "Reward Page",
+      "sweeperScratchersPage" : "sweeper Scratcher Page",
+      "storePage" : "Store Page",
+      "selectPopupVisibility": "Select Popup Visibility",
+      "selectPageName": "Select Page Name",
+      "registration": "Registration",
+      "search": "Search",
+      "purchase": "Purchase",
+      "kyc": "KYC",
+      "none": "None",
+      "store" : "Store",
+      "reward" :"Reward",
+      "promotionsPage" : "Promotions Page",
+      "sweeperScratchers" : "sweeper Scratchers"
+    },
+    "inputField": {
+      "visibility": {
+        "label": "Popup Visibility",
+        "option": "Select",
+        "errors": {
+          "required": "Popup Visibility is Required"
+        }
+      },
+      "pageName": {
+        "label": "Page Name",
+        "option": "Select",
+        "errors": {
+          "required": "Page Name is Required"
+        }
+      },
+      "name": {
+        "label": "Popup Name",
+        "placeholder": "Enter Popup Name",
+        "option": "Select",
+        "errors": {
+          "required": "Popup Name is Required"
+        }
+      },
+      "btnRedirection": {
+        "label": "Button Redirection",
+        "placeholder": "Enter Button Redirection"
+      },
+      "mobileImage": {
+        "label": "Mobile Popup",
+        "errors": {
+          "required": "Mobile Popup Image required",
+          "invalidFormat": "Uploaded file has unsupported format.",
+          "max": "File Size Should be Less Than 1MB"
+        }
+      },
+      "desktopImage": {
+        "label": "Desktop Popup",
+        "errors": {
+          "required": "Desktop Popup Image required",
+          "invalidFormat": "Uploaded file has unsupported format.",
+          "max": "File Size Should be Less Than 1MB"
+        }
+      },
+     
+      "textOne": {
+        "label": "Text Heading1",
+        "placeholder": "Enter Text Heading"
+      },
+      "textTwo": {
+        "label": "Text Heading2",
+        "placeholder": "Enter Text Heading"
+      },
+      "textThree": {
+        "label": "Text Description",
+        "placeholder": "Enter Text Description"
+      },
+      "btnText": {
+        "label": "Button Text",
+        "placeholder": "Enter Button Text"
+      }
+    }
+  }
+}

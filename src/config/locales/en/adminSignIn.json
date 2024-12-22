@@ -1,0 +1,20 @@
+{
+  "title": " Casino",
+  "InputField": {
+    "email": {
+      "label": "Email",
+      "errors": {
+        "required": "Email Required",
+        "invalid": "Invalid email"
+      }
+    },
+    "password": {
+      "label": "Password",
+      "errors": {
+        "required": "Password Required"
+      }
+    }
+  },
+  "signInButton": "Sign In",
+  "signInSuccessToast": "You have logged in!"
+}

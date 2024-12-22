@@ -1,0 +1,47 @@
+{
+  "kycLabels": "KYC Labels",
+  "requestedKycs": "Requested KYC",
+  "kycStatus": "Kyc Status",
+  "search": "Search",
+  "headers": {
+    "id": "Id",
+    "label": "Label",
+    "name": "Name",
+    "required": "Required",
+    "isActive": "Is Active",
+    "action": "Action"
+  },
+  "requestedKycsTableHeaders": {
+    "userId": "User Id",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "username": "Username",
+    "isActive": "Is Active",
+    "action": "Action"
+  },
+  "createKycLabel": {
+    "label": "Add KYC Labels",
+    "inputField": {
+      "name": {
+        "placeholder": "Label Name",
+        "label": "Label Name"
+      },
+      "required": {
+        "placeholder": "Required",
+        "label": "Required"
+      },
+      "isActive": {
+        "placeholder": "Is Active",
+        "label": "Is Active"
+      }
+    }
+  },
+  "kycLabelListing": {
+    "title": "KYC Labels"
+  },
+  "requestedKycListing": {
+    "title": "Requested KYCs"
+  },
+  "cancel": "Cancel",
+  "submit": "Submit"
+}

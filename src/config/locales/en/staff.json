@@ -1,0 +1,114 @@
+{
+  "title": "Staff",
+  "search": "Search",
+  "createButton": "Create",
+  "activeStatus": "Active",
+  "inActiveStatus": "In-Active",
+  "noDataFound": "No data found",
+  "headers": {
+    "id": "Id",
+    "email": "Email",
+    "name": "Name",
+    "role": "Role",
+    "group": "Group",
+    "status": "Status",
+    "action": "Action"
+  },
+  "overviewConst": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "password": "Password",
+    "userName": "User Name",
+    "role": "Role",
+    "group": "Group"
+  },
+  "createStaff": {
+    "title":  "Create Staff",
+    "createdSuccessToast": "Staff added succesfully.",
+    "selectPermissionErrorToast": "Please Select At Least One Permission"
+  },
+  "editStaff": {
+    "title": "Edit Staff",
+    "editSuccessToast": "Admin updated successfully.",
+    "selectPermissionErrorToast": "Please Select At Least One Permission"
+  },
+  "deleteSuccessToast": "Admin deleted successfully.",
+  "staffFields": {
+    "email": {
+      "label": "Email",
+      "placeholder": "Enter Email",
+      "errors": {
+        "invalid": "Invalid email",
+        "required": "Email required"
+      }
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Enter Password",
+      "popoverMessage": "Must be at-least 8 characters long with 1 uppercase and 1 lowercase letters, 1 special character and 1 digit",
+      "errors": {
+        "invalid": "Invalid password",
+        "required": "Password required"
+      }
+    },
+    "firstName": {
+      "label": "First Name",
+      "placeholder": "Enter First Name",
+      "errors": {
+        "invalid": "Only Alphabets and Space Allowed and Must Start with Alphabet",
+        "required": "First name required",
+        "min": "First name must be at-least 3 characters"
+      }
+    },
+    "lastName": {
+      "label": "Last Name",
+      "placeholder": "Enter Last Name",
+      "errors": {
+        "invalid": "Only Alphabets and Space Allowed and Must Start with Alphabet",
+        "required": "Last name required",
+        "min": "Last name must be at-least 3 characters"
+      }
+    },
+    "username": {
+      "label": "User Name",
+      "placeholder": "Enter User Name",
+      "errors": {
+        "invalid": "Only Alphabets Allowed",
+        "required": "User name required",
+        "min": "User name must be at-least 8 characters"
+      }
+    },
+    "group": {
+      "label": "Group",
+      "errors": {
+        "invalid": "Only Alphabets, Numbers and Space Allowed",
+        "required": "Group name required",
+        "min": "Group Name must be at-least 3 characters"
+      }
+    },
+    "role": {
+      "label": "Role",
+      "selectRole": "Select Role",
+      "errors": {
+        "required": "Role required"
+      }
+    },
+    "manager": {
+      "label": "Manager",
+      "selectManager": "Select Manager",
+      "errors": {
+        "invalid": "Only Alphabets Allowed",
+        "required": "Parent Manager is required",
+        "min": "User name must be at-least 8 characters"
+      }
+    },
+    "permissions": {
+      "label": "Permissions",
+      "selectReadPermissionErrorToast": "Please Select Read Permission Before Selecting Other For This Module",
+      "create": "Create"
+    },
+    "cancelButton": "Cancel",
+    "submitButton": "Submit"
+  }
+}

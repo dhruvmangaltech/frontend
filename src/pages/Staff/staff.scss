@@ -1,0 +1,16 @@
+@media screen and (max-width: 767.9px) {
+    .permission-row {
+        border-bottom: 1px solid #80808042;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.action-column {
+    white-space: nowrap;
+    width: 1%;
+}
+
+.action-column button {
+    margin-right: 5px;
+}

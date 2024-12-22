@@ -1,0 +1,14 @@
+{
+    "tableHeaders": {
+        "id": "id",
+        "stateName": "State Name",
+        "stateCode": "State Code",
+        "stateStatus": "State Status",
+        "action": "Action"
+    },
+    "buttons": {
+        "restrict": "Restrict",
+        "allow": "Allow"
+    },
+    "success": "GeoBlock states updated successfully"
+}
