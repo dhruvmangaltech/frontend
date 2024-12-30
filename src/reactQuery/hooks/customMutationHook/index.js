@@ -103,6 +103,8 @@ import {
   updateKycCheck,
   updateDepositConfig,
   updateAllowedStates,
+  createProduct,
+  updateStock,
 } from "../../../utils/apiCalls";
 import { toast } from "../../../components/Toast";
 // import { crashGameCancelBetUrl, crashGameEscapeBetUrl, crashGamePlaceBetUrl, updateUnseenCountUrl, loginUrl } from '../../axios/urls'
@@ -1005,6 +1007,22 @@ export const useUpdateKycCheck = ({ onSuccess, onError }) => {
 export const useUpdateAllowedStates = ({onSuccess, onError}) => {
   return useMutation ({
     mutationFn: updateAllowedStates,
+    onSuccess,
+    onError
+  })
+}
+
+export const useCreateProduct = ({onSuccess, onError}) => {
+  return useMutation ({
+    mutationFn: createProduct,
+    onSuccess,
+    onError
+  })
+}
+
+export const useUpdateStock = ({onSuccess, onError}) => {
+  return useMutation ({
+    mutationFn: updateStock,
     onSuccess,
     onError
   })

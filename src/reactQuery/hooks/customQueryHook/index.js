@@ -17,7 +17,9 @@ import {
   getSpinWheelConfiguration,
   getAllowedStateListing,
   getProductList,
-  getStockList
+  getStockList,
+  getProductDetails,
+  getLogs
 } from '../../../utils/apiCalls'
 import {
   GET_PACKAGES_LISTING,
@@ -36,7 +38,8 @@ import {
   GET_PAYMENT_PROVIDER_LISTING,
   GET_SPIN_WHEEL_CONFIGURATION,
   GET_ALLOWED_STATE_LISTING,
-  GET_PRODUCT_LISTING
+  GET_PRODUCT_LISTING,
+  GET_PRODUCT_DETAILS
 } from '../../queryKeys'
 
 // get User Documents custom query hook
@@ -334,11 +337,11 @@ export const useGetSpinWheel = () => {
   })
 }
 
-export const useGetProductsListing = () => {
+export const useGetProductsListing = ({params}) => {
   return useQuery({
     queryKey: [GET_PRODUCT_LISTING],
     queryFn: () => {
-      return getProductList()
+      return getProductList(params)
     },
     select: (data) => data?.data?.productList || {},
     refetchOnMount: true,
@@ -357,3 +360,30 @@ export const useGetStockListing = () => {
     refetchOnWindowFocus: false,
   })
 }
+
+export const useGetProductDetails = (params) => {
+  return useQuery({
+    queryKey: [GET_PRODUCT_DETAILS, Object.values(params)],
+    queryFn: () => {
+      return getProductDetails(params)
+    },
+    select: (data) => data?.data?.product || {},
+    refetchOnMount: true,
+    refetchOnWindowFocus: false,
+  })
+}
+
+export const useStockLogs = (params) => {
+  return useQuery({
+    queryKey: [GET_PRODUCT_DETAILS],
+    queryFn: () => {
+      return getLogs(params, Object.values(params))
+    },
+    select: (data) => data?.data?.stockLogsList || {},
+    refetchOnMount: true,
+    refetchOnWindowFocus: false,
+  })
+}
+
+
+

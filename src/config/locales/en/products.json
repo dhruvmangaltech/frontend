@@ -1,0 +1,212 @@
+{
+    "title": "Products",
+    "kycStatus": "Kyc Status",
+    "search": "Search",
+    "tableHeaders": {
+        "id": "Id",
+        "name": "Name",
+        "color": "colour",
+        "scale": "scale",
+        "size": "size",
+        "action": "action",
+        "currency": "Currency",
+        "country": "Country",
+        "status": "status"
+    },
+    "createProduct": {
+        "title": "Create Product",
+        "createdSuccessToast": "Product added succesfully.",
+        "selectPermissionErrorToast": "Please Select At Least One Permission"
+    },
+    "productFields": {
+        "name": {
+            "label": "product Name",
+            "placeholder": "Enter Product Name",
+            "errors": {
+                "invalid": "Invalid Name",
+                "required": "Product Name required"
+            }
+        },
+        "scale": {
+            "label": "Scale",
+            "placeholder": "Enter Scale",
+            "errors": {
+                "invalid": "Only Numeric values Allowed",
+                "required": "Scale required",
+                "min": "scale must be greated than 0"
+            }
+        },
+        "size": {
+            "label": "Size",
+            "placeholder": "Enter size",
+            "errors": {
+                "invalid": "Only Numeric values Allowed",
+                "required": "Size required",
+                "min": "size must be greated than 0"
+            }
+        },
+        "description": {
+            "label": "Description",
+            "placeholder": "Enter Description",
+            "errors": {
+                "invalid": "Only Alphabets Allowed",
+                "required": "Description required",
+                "min": "Description must be at-least 8 characters long"
+            }
+        },
+        "colour": {
+            "label": "Colour",
+            "placeholder": "Enter Colour",
+            "errors": {
+                "invalid": "Only Alphabets and Space Allowed",
+                "required": "Colour required",
+                "min": "Colour must be at-least 3 characters"
+            }
+        },
+        "role": {
+            "label": "Role",
+            "selectRole": "Select Role",
+            "errors": {
+                "required": "Role required"
+            }
+        },
+        "manager": {
+            "label": "Manager",
+            "selectManager": "Select Manager",
+            "errors": {
+                "invalid": "Only Alphabets Allowed",
+                "required": "Parent Manager is required",
+                "min": "User name must be at-least 8 characters"
+            }
+        },
+        "permissions": {
+            "label": "Permissions",
+            "selectReadPermissionErrorToast": "Please Select Read Permission Before Selecting Other For This Module",
+            "create": "Create"
+        },
+        "cancelButton": "Cancel",
+        "submitButton": "Submit"
+    },
+    "activeStatus": "Active",
+    "inActiveStatus": "In-Active",
+    "noDataFound": "No data found",
+    "playerDetails": {
+        "title": "Player:",
+        "overview": {
+            "title": "Overview",
+            "basicInfo": {
+                "title": "Basic Info"
+            }
+        },
+        "wallet": {
+            "title": "Wallet",
+            "walletId": "Wallet Id",
+            "currencyCode": "Currency Code",
+            "totalSc": "Total SC",
+            "psc": "Purchased Cash (PSC)",
+            "wsc": "Winning Cash (WSC)",
+            "bsc": "Bonus Cash (BSC)",
+            "gc": "GC",
+            "createdAt": "Created At",
+            "updatedAt": "Updated At"
+        }
+    },
+    "playerLimit": {
+        "wager": "wager",
+        "deposit": "deposit",
+        "notSet": "Not Set",
+        "setLimit": "Set Limit",
+        "resetLimit": "Reset Limit",
+        "setBreak": "Set Take A Break",
+        "resetBreak": "Reset Take A Break",
+        "selfExclusion": "Self Exclusion",
+        "sessionLimit": "Session Limit",
+        "timePeriod": "Time Period",
+        "permanent": "Permanent",
+        "customValue": "Custom Value",
+        "months": "Months",
+        "set": "Set",
+        "monthPlace": "Enter Month",
+        "daysPlace": "Enter Days",
+        "hoursPlace": "Enter Hours",
+        "limitPlace": "Enter Limit",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "setSelfExclusion": "Set Self Exclusion",
+        "resetSelfExclusion": "Reset Self Exclusion",
+        "limitResetToast": "Limits Reset Successfully",
+        "limitUpdatedToast": "Limits Updated Successfully",
+        "limitHeading": {
+            "dailyWageLimit": "Daily Purchase Limit",
+            "weeklyWageLimit": "Weekly Purchase Limit",
+            "monthlyWageLimit": "Monthly Purchase Limit",
+            "dailyDepositLimit": "Daily Deposit Limit",
+            "weeklyDepositLimit": "Weekly Deposit Limit",
+            "monthlyDepositLimit": "Monthly Deposit Limit",
+            "dailyLossLimit": "Daily Loss Limit",
+            "weeklyLossLimit": "Weekly Loss Limit",
+            "monthlyLossLimit": "Monthly Loss Limit",
+            "dailyBetLimit": "Daily Bet Limit",
+            "weeklyBetLimit": "Weekly Bet Limit",
+            "monthlyBetLimit": "Monthly Bet Limit"
+        },
+        "errors": {
+            "limitPositive": "Limit must be positive number",
+            "limitInt": "Limit must be an integer",
+            "limitReq": "Limit Required",
+            "timePeriodPositive": "Time Period must be positive number",
+            "timePeriodInt": "Time Period must be an integer",
+            "timePeriodReq": "Time Period Required",
+            "monthPositive": "Month must be positive number",
+            "monthInt": "Month must be an integer",
+            "monthReq": "Month Required"
+        }
+    },
+    "history": {
+        "filters": {
+            "coinType": "Coin Type",
+            "currency": "Select a Coin"
+        },
+        "headers": {
+            "id": "Casino Transaction Id",
+            "transactionId": "External transaction Id",
+            "userEmail": "Email",
+            "gameName": "Game Id",
+            "actionType": "Action Type",
+            "amount": "Amount",
+            "bonusMoney": "Bonus Money",
+            "currencyCode": "Amount Type",
+            "status": "Status",
+            "createdAt": "Created At"
+        }
+    },
+    "transactions": {
+        "transactionsBanking": "Banking Transactions",
+        "casinoTransactions": "Casino Transactions",
+        "filters": {
+            "search": "Search",
+            "actionType": "Action Type",
+            "actionTypeOpt": "Choose Type",
+            "currency": "Select a Coin",
+            "status": "Status",
+            "time": "Time Period",
+            "paymentProviders": "Payment Method"
+        },
+        "headers": {
+            "id": "Transaction Id",
+            "paymentId": "Payment Id",
+            "amount": "Amount",
+            "email": "Email",
+            "actioneeName": "Actionee Name",
+            "transactionType": "Transaction Type",
+            "paymentMethod": "Payment Method",
+            "actionType": "Action Type",
+            "status": "Status",
+            "gcCoin": "GC Coin",
+            "scCoin": "SC Coin",
+            "createdAt": "Created At",
+            "action": "Action",
+            "details": "Details"
+        }
+    }
+}

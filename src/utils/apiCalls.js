@@ -433,7 +433,9 @@ const getProductList = (params) => getRequest(`${REACT_APP_API_URL}/api/v1/produ
 const getStockList = (params) => getRequest(`${REACT_APP_API_URL}/api/v1/stocks`, params);
 const createProduct = (data) => postRequest(`${REACT_APP_API_URL}/api/v1/products`, data)
 const updateProduct = (data) => putRequest(`${REACT_APP_API_URL}/api/v1/products`, data)
-const updateStock = (data) => getRequest(`${REACT_APP_API_URL}/api/v1/stocks`, data);
+const updateStock = (data) => putRequest(`${REACT_APP_API_URL}/api/v1/stocks`, data);
+const getProductDetails = (data) => getRequest(`${REACT_APP_API_URL}/api/v1/products/getSingleProduct`, data)
+const getLogs = (data) => getRequest(`${REACT_APP_API_URL}/api/v1/stocks/logs`, data)
 
 export {
   adminLogin,
@@ -620,5 +622,7 @@ export {
   getStockList,
   createProduct,
   updateProduct,
-  updateStock
+  updateStock,
+  getProductDetails,
+  getLogs
 };

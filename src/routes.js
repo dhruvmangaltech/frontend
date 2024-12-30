@@ -59,4 +59,6 @@ export const AdminRoutes = {
   KYCSettings: "/admin/kyc-settings",
   Stocks: "/admin/stocks",
   Products: "/admin/products",
+  CreateProducts: "/admin/products/create",
+  ProductDeatil: "/admin/products/:productId"
 };

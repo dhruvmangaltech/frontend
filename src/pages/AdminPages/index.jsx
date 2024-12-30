@@ -58,8 +58,10 @@ import CasinoAggregator from "../CasinoManagement/Aggregators";
 import KYCSettings from "../KYCSettings";
 import CashierManagement from "../CashierManagement";
 import GeoBlocking from "../GeoBlocking";
-import Stocks from "./Stocks";
+import Stocks from "../Stocks";
 import Products from "../Products";
+import CreateProduct from "../Products/components/createProduct/createProduct";
+import ViewStock from "../Products/components/viewStock/viewStock";
 
 const AdminPages = () => (
   <Routes>
@@ -526,6 +528,24 @@ const AdminPages = () => (
       element={
         <PrivateRoute module={{ Products: "R" }}>
           <Products />
+        </PrivateRoute>
+      }
+    />
+
+    <Route
+      path={AdminRoutes.CreateProducts}
+      element={
+        <PrivateRoute module={{ Products: "R" }}>
+          <CreateProduct />
+        </PrivateRoute>
+      }
+    />
+
+    <Route
+      path={AdminRoutes.ProductDeatil}
+      element={
+        <PrivateRoute module={{ Products: "R" }}>
+          <ViewStock />
         </PrivateRoute>
       }
     />

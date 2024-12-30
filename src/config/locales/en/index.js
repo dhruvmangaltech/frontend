@@ -22,6 +22,7 @@ import paymentEn from "./payment.json";
 import kycSettingsEN from "./kycSettings.json";
 import cashierEN from "./cashier.json";
 import geoblockingEn from './geoblocking.json'
+import productsEn from './products.json'
 
 const translationsEN = {
   adminSignIn: adminSignInEN,
@@ -47,7 +48,8 @@ const translationsEN = {
   payment: paymentEn,
   kycSettings: kycSettingsEN,
   cashier: cashierEN,
-  geoblocking: geoblockingEn
+  geoblocking: geoblockingEn,
+  products: productsEn
 };
 
 export default translationsEN;

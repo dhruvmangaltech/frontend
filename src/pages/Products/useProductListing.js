@@ -8,9 +8,10 @@ import { errorHandler } from '../../reactQuery/hooks/customMutationHook'
 import { toast } from '../../components/Toast'
 import { useUpdateStatusMutation } from '../../reactQuery/hooks/customMutationHook'
 import { initialSet } from './constants'
+import { useGetProductsListing } from '../../reactQuery/hooks/customQueryHook'
 
 const useProductListing = () => {
-  const { t } = useTranslation(['players'])
+  const { t } = useTranslation(['products'])
   const navigate = useNavigate()
   const queryClient = useQueryClient()
   const [limit, setLimit] = useState(15)
@@ -47,9 +48,15 @@ const useProductListing = () => {
 //       return getAllPlayers(params)
 //     }
 //   })
+
+
+const {
+  isLoading: loading, data: stockList
+} = useGetProductsListing({params: {pageNo: 1, limit: 10}})
+
   const playersData = null
-const loading = false
-  const totalPages = Math.ceil(playersData?.count / limit)
+// const loading = false
+  const totalPages = Math.ceil(stockList?.count / limit)
 
   const selected = (h) =>
     orderBy === h.value &&
@@ -100,7 +107,8 @@ const loading = false
     handleStatusShow,
     setStatusShow, statusShow, handleYes, status,
     globalSearch,
-    setGlobalSearch
+    setGlobalSearch,
+    stockList
   }
 }
 
