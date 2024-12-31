@@ -4,10 +4,11 @@ import useProductListing from './useProductListing';
 import { Row, Col, Card, Form, Button, Table, Tabs, Tab } from '@themesberg/react-bootstrap'
 import { tableHeaders } from './constants'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEye, faCheckSquare, faWindowClose, faArrowCircleUp, faArrowCircleDown } from '@fortawesome/free-solid-svg-icons'
+import { faEye, faCheckSquare, faWindowClose, faArrowCircleUp, faArrowCircleDown, faQrcode } from '@fortawesome/free-solid-svg-icons'
 import Trigger from '../../components/OverlayTrigger'
 import useCheckPermission from '../../utils/checkPermission'
 import { AdminRoutes } from '../../routes';
+
 
 const Products = () => {
 
@@ -129,7 +130,7 @@ const Products = () => {
 											<FontAwesomeIcon icon={faEye} />
 										</Button>
 										<div
-											id={`contextMenu-${player.userId}`}
+											id={`contextMenu-${player.productId}`}
 											style={{
 												position: 'fixed',
 												display: 'none',
@@ -146,7 +147,7 @@ const Products = () => {
 														`${AdminRoutes.ProductDeatil.split(':').shift()}${player.productId}`,
 														'_blank'
 													);
-													document.getElementById(`contextMenu-${player.userId}`).style.display = 'none';
+													document.getElementById(`contextMenu-${player.productId}`).style.display = 'none';
 												}}
 												style={{
 													cursor: 'pointer',
@@ -157,42 +158,22 @@ const Products = () => {
 											</div>
 										</div>
 										{/* Code to set Player as Active/Inactive   */}
-										{!player.isActive
-											? (
+										{
+											 (
 												<>
-													<Trigger message='Set Status Active' id={player.userId + 'active'} />
-													<Button
-														id={player.userId + 'active'}
-														className='m-1'
-														size='sm'
-														variant='success'
-														onClick={() =>
-															handleStatusShow(
-																player.userId,
-																player.isActive
-															)}
-														hidden={isHidden({ module: { key: 'Users', value: 'T' } })}
-													>
-														<FontAwesomeIcon icon={faCheckSquare} />
-													</Button>
-												</>
-											)
-											: (
-												<>
-													<Trigger message='Set Status In-Active' id={player.userId + 'inactive'} />
+													<Trigger message='View QR Code' id={player.userId + 'inactive'} />
 													<Button
 														id={player.userId + 'inactive'}
 														className='m-1'
 														size='sm'
 														variant='danger'
-														onClick={() =>
-															handleStatusShow(
-																player.userId,
-																player.isActive
-															)}
-														hidden={isHidden({ module: { key: 'Users', value: 'T' } })}
+														onClick={
+															()=>navigate(
+															`${AdminRoutes.QrCode.split(':').shift()}${player.productId}`
+														)}
+														// hidden={isHidden({ module: { key: 'Users', value: 'T' } })}
 													>
-														<FontAwesomeIcon icon={faWindowClose} />
+														<FontAwesomeIcon icon={faQrcode} />
 													</Button>
 												</>
 											)}

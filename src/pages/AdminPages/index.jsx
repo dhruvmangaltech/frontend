@@ -62,6 +62,8 @@ import Stocks from "../Stocks";
 import Products from "../Products";
 import CreateProduct from "../Products/components/createProduct/createProduct";
 import ViewStock from "../Products/components/viewStock/viewStock";
+import Scanner from "../Scanner";
+import QrCode from "../Products/components/qrCode/qrCode";
 
 const AdminPages = () => (
   <Routes>
@@ -544,8 +546,25 @@ const AdminPages = () => (
     <Route
       path={AdminRoutes.ProductDeatil}
       element={
-        <PrivateRoute module={{ Products: "R" }}>
+        <PrivateRoute module={{ ProductDetails: "R" }}>
           <ViewStock />
+        </PrivateRoute>
+      }
+    />
+
+    <Route
+      path={AdminRoutes.Scanner}
+      element={
+        <PrivateRoute module={{ Scanner: "R" }}>
+          <Scanner />
+        </PrivateRoute>
+      }
+    />
+     <Route
+      path={AdminRoutes.QrCode}
+      element={
+        <PrivateRoute module={{ Scanner: "R" }}>
+          <QrCode />
         </PrivateRoute>
       }
     />

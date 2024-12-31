@@ -13,6 +13,9 @@ const PrivateRoute = ({isWithoutCard = false, children, module }) => {
   useEffect(() => {
     if(!getLoginToken()) navigate(AdminRoutes.AdminSignin)
   }, [getLoginToken()])
+
+  // !loading &&  console.log(permissions[Object.keys(module)?.[0]]?.includes(module[Object.keys(module)?.[0]]), "permission")
+  console.log(module)
   return (
     userDetails && !loading && 
     ((!module || permissions[Object.keys(module)?.[0]]?.includes(module[Object.keys(module)?.[0]]))

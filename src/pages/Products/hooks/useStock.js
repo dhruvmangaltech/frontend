@@ -3,26 +3,31 @@ import { useGetProductDetails, useStockLogs } from '../../../reactQuery/hooks/cu
 import { useParams } from 'react-router-dom'
 import { useUpdateStock } from '../../../reactQuery/hooks/customMutationHook';
 import { toast } from '../../../components/Toast';
+import { useUserStore } from '../../../store/store';
 
 const useStock = () => {
 	const { productId } = useParams();
-
+	const { userDetails, permissions } = useUserStore((state) => state);
 	const {
-		isLoading, data: res
+		isLoading, data: res, refetch: refetchProduct
 	} = useGetProductDetails({ productId })
 
 	const {
 		isLoading: stockLogsLoading,
 		refetch,
-		data: stockLogsListing
-	} = useStockLogs({productId})
+		data: stockLogsListing,
+	} = useStockLogs({productId}, !!permissions['Stocks'])
 
 	const onSuccess = () => {
+		refetch()
+		refetchProduct()
 		toast("Stock updated successfully")
 	}
 
-	const onError = () => {
-		toast("Issue in updating stocks")
+	const onError = (err) => {
+		// debugger
+		console.log(err.response?.data?.errors[0]?.description, "error in updating stock")
+		toast(err.response?.data?.errors[0]?.description, 'error')
 	}
 
 	const {
@@ -33,13 +38,13 @@ const useStock = () => {
 		onError
 	})
 
-	console.log(stockLogsListing, "===============================")	
+	// console.log(stockLogsListing, "===============================")	
 
 	return {
-		isLoading: isLoading || isUpdateStockLoading || stockLogsLoading,
+		isLoading: isLoading || isUpdateStockLoading  ,
 		res,
 		updateStock,
-		stockLogsListing,
+		stockLogsListing: stockLogsListing || []  ,
 		refetch
 	}
 }

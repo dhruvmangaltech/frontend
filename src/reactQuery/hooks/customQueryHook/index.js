@@ -373,12 +373,13 @@ export const useGetProductDetails = (params) => {
   })
 }
 
-export const useStockLogs = (params) => {
+export const useStockLogs = (params, permission) => {
   return useQuery({
     queryKey: [GET_PRODUCT_DETAILS],
     queryFn: () => {
       return getLogs(params, Object.values(params))
     },
+    enabled: permission,
     select: (data) => data?.data?.stockLogsList || {},
     refetchOnMount: true,
     refetchOnWindowFocus: false,

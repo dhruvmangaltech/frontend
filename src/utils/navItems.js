@@ -235,6 +235,14 @@ export const navItems = [
     // labelKey: "Geo-blocking",
     link: AdminRoutes.Stocks,
     icon: faImage,
-    permissionLabel: "Stocks",
+    permissionLabel: "Products",
+  },
+  {
+    titleKey: "Scanner",
+    // labelKey: "Geo-blocking",
+    link: AdminRoutes.Scanner,
+    icon: faImage,
+    permissionLabel: "Scanner",
   }
+
 ];

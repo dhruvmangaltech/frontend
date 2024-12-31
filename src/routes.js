@@ -60,5 +60,7 @@ export const AdminRoutes = {
   Stocks: "/admin/stocks",
   Products: "/admin/products",
   CreateProducts: "/admin/products/create",
-  ProductDeatil: "/admin/products/:productId"
+  ProductDeatil: "/admin/products/:productId",
+  Scanner: '/admin/scanner',
+  QrCode: '/admin/products/qr-code/:productId'
 };
